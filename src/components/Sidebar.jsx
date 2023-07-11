@@ -6,10 +6,18 @@ function Sidebar() {
       <div className="sidebar-logo">Logo</div>
       <div className="sidebar-items-wrapper">
         <ul>
-          <li>Dashboard</li>
-          <li>Tables</li>
-          <li>Menu</li>
-          <li>Reports</li>
+          <li>
+            <i class="ri-dashboard-line"></i>Dashboard
+          </li>
+          <li className="active">
+            <i className="ri-layout-grid-fill"></i>Tables
+          </li>
+          <li>
+            <i className="ri-draft-line"></i>Menu
+          </li>
+          <li>
+            <i className="ri-file-chart-line"></i>Reports
+          </li>
         </ul>
       </div>
     </aside>

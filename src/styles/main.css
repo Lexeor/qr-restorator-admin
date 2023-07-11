@@ -74,6 +74,7 @@ main {
 
 aside {
   width: 200px;
+  color: #959595;
 }
 
 .sidebar-logo {
@@ -81,6 +82,27 @@ aside {
   justify-content: center;
   align-items: center;
   height: 70px;
+}
+
+aside ul {
+  margin: 0;
+  padding: 1em;
+}
+aside li {
+  width: 100%;
+  padding: 0.8em 1em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+aside li i {
+  font-size: 1.5em;
+}
+aside li.active {
+  background-color: #2a2a2a;
+  color: #e8b225;
 }
 
 .top-panel {
