@@ -90,19 +90,49 @@ aside ul {
 }
 aside li {
   width: 100%;
+  height: 50px;
   padding: 0.8em 1em;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5em;
+  cursor: pointer;
+  z-index: 2;
+}
+aside li.active {
+  color: #e8b225;
 }
 aside li i {
   font-size: 1.3em;
 }
-aside li.active {
-  background-color: #2a2a2a;
+
+.menu-items-wrapper {
+  position: relative;
+}
+
+.selector-wrapper {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: calc(100% - 2em);
+  padding: 1em;
+  display: grid;
+  transition: all 1s ease-in-out;
+}
+
+.selector {
+  background-color: rgba(42, 42, 42, 0.4);
+  pointer-events: none;
   color: #e8b225;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.selector-dummy {
+  flex-grow: 1;
 }
 
 .top-panel {

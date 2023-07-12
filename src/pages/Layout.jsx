@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import TopPanel from "../components/TopPanel";
+import Sidebar from "../components/Sidebar/Sidebar";
+import TopPanel from "../components/TopPanel/TopPanel";
 
 function Layout() {
   return (
