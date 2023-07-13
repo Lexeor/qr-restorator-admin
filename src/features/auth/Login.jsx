@@ -56,35 +56,42 @@ function Login() {
   const content = isLoading ? (
     <h1>Loading...</h1>
   ) : (
-    <section className="login">
-      <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}></p>
+    <div className="login-wrapper">
+      <section className="login">
+        <h1>Login</h1>
 
-      <h1>Login first</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="form-row">
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              className="large"
+              ref={userRef}
+              value={user}
+              onChange={handleUserInput}
+              autoComplete="off"
+              required
+            />
+          </div>
 
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          ref={userRef}
-          value={user}
-          onChange={handleUserInput}
-          autoComplete="off"
-          required
-        />
+          <div className="form-row">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              className="large"
+              value={password}
+              onChange={handlePasswordInput}
+              required
+            />
+          </div>
 
-        <label htmlFor="password">Username:</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={handlePasswordInput}
-          required
-        />
-
-        <button>Sign In</button>
-      </form>
-    </section>
+          <button className="btn-primary large">Sign In</button>
+          <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}></p>
+        </form>
+      </section>
+    </div>
   );
 
   return content;

@@ -85,5 +85,36 @@ main {
   mask-image: -webkit-radial-gradient(white, black);
 }
 
+// Buttons
+
+.btn-primary {
+  background-color: $color-primary;
+  border: 0;
+  color: $text-light;
+  padding: 0.5em 1em;
+  width: 100%;
+  border-radius: $border-radius-m;
+
+  &.large {
+    font-size: 1.2rem;
+  }
+}
+
+// Inputs
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: $border-radius-s-inner;
+  border: 1px solid black;
+  background-color: $color-background-dark;
+  color: $text-light;
+
+  &.large {
+    font-size: 1.2em;
+  }
+}
+
+@import "./login";
 @import "./sidebar";
 @import "./top-panel";
