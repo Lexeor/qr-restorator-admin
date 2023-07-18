@@ -88,9 +88,9 @@ function Login() {
           </div>
 
           <button className="btn-primary large">Sign In</button>
-          <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}></p>
         </form>
       </section>
+      <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}></p>
     </div>
   );
 
